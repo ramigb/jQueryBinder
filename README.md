@@ -2,8 +2,10 @@
 ### Even if the name is taken :P
 
 This simple and *lightweight (less than 1kb packed, ~2kb unpacked)* 
+
 binder created to bind the value of e.g. input/textarea/anything ..etc 
-to rather "static" DOM elements e.g. <a>,<h3>,<p> ...etc
+
+to rather "static" DOM elements e.g. a/h3/p ...etc
 
 ###Demo
 [See the demo to get a better understanding on how this plugin work.](https://googledrive.com/host/0By1vPHcQTVeSUkpjLXY0bGpwZUE/)
@@ -50,6 +52,7 @@ plus if you prefer jquery, it's pure jQuery, you can even fork it and modify it 
 
 ###License
 [Apache License V2](http://www.apache.org/licenses/LICENSE-2.0)
+
 I suck with licenses, i just thought it'd be cool to include a one.
 
 ###Credits : 
