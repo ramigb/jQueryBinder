@@ -15,12 +15,19 @@ The uncompressed JS file contains notes as well.
 Those are some examples :
 
 This will transfer the value of the input field to the h3 text after the 'change' event.
+
 	$('#h3').binder({bindTo : '#input', method : 'text'});
+
 This will transfer the value of the input field to the h3 text after the 'keyup' event.
+
 	$('#h3').binder({bindTo : '#input', method : 'text', listenTo : 'keyup'});
+
 This will change the CSS 'color':	
+
 	$('#h3').binder({bindTo : '#input', css : 'color'});
+
 This will change the Attribute 'href':	
+
 	$('#h3').binder({bindTo : '#input', attribute : 'href'});
 
 PLEASE NOTE, that H3 and INPUT are here as an example, you can use virtually any two elements you want :).
@@ -40,4 +47,5 @@ PLEASE NOTE, that H3 and INPUT are here as an example, you can use virtually any
 
 
 Credits : 
-Rami GB
+
+Rami GB [Blog](http://ramigbtech.blogspot.com) | [Twitter](http://www.twitter.com/ramigb)
