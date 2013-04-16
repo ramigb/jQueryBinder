@@ -15,13 +15,23 @@
 		$('#binder3').binder({bindTo : '#bindee3', attribute : 'href'});
 		$('#binder4').binder({bindTo : '#bindee4', method : 'text'});
 		$('#binder5').binder({bindTo : '#bindee5', method : 'text', listenTo : 'keyup'});
+		$('#binder6').binder({
+			bindTo : '#bindee6', 
+			method : function(theBindee, theBinder){
+				val = theBindee.val();
+				//Will reverse text
+				val = val.split("").reverse().join("");
+				theBinder.text(val);
+			}, 
+			listenTo : 'keyup'}
+		);
 	})
 	</script>
 </head>
 <body>
 	<div class="container">
 		<h1>This is a <em>very</em> simple jquery input to ui binder</h1>			
-		<p>For more info and download please refer to the Github page : </p>
+		<p>For more info and download please refer to the Github page : <a href="https://github.com/ramigb/jQueryBinder">GitHub</a></p>
 
 		<div class="demo">
 			<h3 class="big_h3" id="binder0">Default behavior, i will change when the 'change' event is triggered.</h3>
@@ -57,6 +67,11 @@
 			<h3 class="big_h3">The textarea is not left alone of course :)</h3>
 			<p id="binder5">There once ...</p>
 			<textarea type="text" id="bindee5" class="big_input" style="height:100px;"></textarea>
+		</div>			
+
+		<div class="demo">
+			<h3 class="big_h3" id="binder6">Whatever you write below will be reversed</h3>
+			<input type="text" id="bindee6" class="big_input" placeholder="Type something here ...">
 		</div>			
 
 	</div>
