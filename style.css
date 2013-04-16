@@ -1,0 +1,30 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Helvitca', sans-serif;
+}
+
+.container{
+	margin:0 auto;
+	width:1024px;
+	height:auto;
+}
+
+.big_input{
+	width:1000px;
+	height:40px;
+}
+
+.big_h3{
+	font-size:20px;
+}
+
+.demo{
+	float:left;
+	clear:both;
+	width:1004px;
+	height:auto;
+	border:1px solid #cdcdcd;
+	padding:10px;
+	margin-bottom:20px;
+}

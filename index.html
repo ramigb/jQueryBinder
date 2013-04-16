@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>jqueryBINDER</title>		
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- From here, This is all what you need to include for it to work -->	
+	<script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery.binder.js"></script>
+	<!-- up to here :) -->	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#binder0').binder({bindTo : '#bindee0', method : 'text'});
+		$('#binder1').binder({bindTo : '#bindee1', method : 'text', listenTo : 'keyup'});
+		$('#binder2').binder({bindTo : '#bindee2', css : 'color'});
+		$('#binder3').binder({bindTo : '#bindee3', attribute : 'href'});
+		$('#binder4').binder({bindTo : '#bindee4', method : 'text'});
+		$('#binder5').binder({bindTo : '#bindee5', method : 'text', listenTo : 'keyup'});
+	})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>This is a <em>very</em> simple jquery input to ui binder</h1>			
+		<p>For more info and download please refer to the Github page : </p>
+
+		<div class="demo">
+			<h3 class="big_h3" id="binder0">Default behavior, i will change when the 'change' event is triggered.</h3>
+			<input type="text" id="bindee0" class="big_input" placeholder="Type something here ...">
+		</div>
+
+		<div class="demo">
+			<h3 class="big_h3" id="binder1">The input below will change me on 'keyup'</h3>
+			<input type="text" id="bindee1" class="big_input" placeholder="Type something here ...">
+		</div>
+
+		<div class="demo">
+			<h3 class="big_h3" id="binder2">The input below will change my color</h3>
+			<input type="text" id="bindee2" class="big_input" placeholder="Type something here ...">
+		</div>		
+
+		<div class="demo">
+			<a href="http://www.google.com" class="big_h3" id="binder3">The input below will change my link</a>
+			<input type="text" id="bindee3" class="big_input" placeholder="Type something here ...">
+		</div>				
+
+		<div class="demo">
+			<h3 class="big_h3">The nice select box Says : <span id="binder4">...</span></h3>
+			<select type="text" id="bindee4" class="big_input">
+				<option value="...">--Choone an Item--</option>
+				<option value="Apple">Apple</option>
+				<option value="Orange">Orange</option>
+				<option value="Tomato">Tomato</option>
+			</select>
+		</div>		
+
+		<div class="demo">
+			<h3 class="big_h3">The textarea is not left alone of course :)</h3>
+			<p id="binder5">There once ...</p>
+			<textarea type="text" id="bindee5" class="big_input" style="height:100px;"></textarea>
+		</div>			
+
+	</div>
+</body>
+</html>
