@@ -4,11 +4,11 @@
 This simple and *lightweight (less than 1kb packed, ~2kb unpacked)* binder created to bind the value of e.g. input/textarea/anything ..etc 
 to rather "static" DOM elements e.g. a/h3/p ...etc.
 
-###Demo
+### Demo
 [See the demo to get a better understanding on how this plugin work.](https://googledrive.com/host/0By1vPHcQTVeSUkpjLXY0bGpwZUE/)
 The uncompressed JS file contains notes as well.
 
-###How-to
+### How-to
 Those are some examples :
 
 This will transfer the value of the input field to the h3 text after the 'change' event.
@@ -30,7 +30,7 @@ This will change the Attribute 'href':
 PLEASE NOTE, that H3 and INPUT are here as an example, you can use virtually any two elements you want.
 	
 
-###Options
+### Options
 	var defaults = {
 		bindTo 			: null, 		//Bindee 		:  a valid selector.
 		listenTo		: 'change', 	//Listen to 	:  an event "change", "keyup", "keypress".
@@ -42,15 +42,15 @@ PLEASE NOTE, that H3 and INPUT are here as an example, you can use virtually any
 		syncMethod 	    : null 			//Needed if method is a function(bindee,binder), then it should be function(bindee,binder)   			   			
 	};	
 
-###So why not use KO?
+### So why not use KO?
 KnockOut is great, i did not make this plugin to compete! each tool fits better for a different task
 if your project requires only this binding functionality, then why stick 40kb in your page?
 plus if you prefer jquery, it's pure jQuery, you can even fork it and modify it as you want.
 
-###License
+### License
 [Apache License V2](http://www.apache.org/licenses/LICENSE-2.0)
 
 I suck with licenses, i just thought it'd be cool to include a one.
 
-###Credits : 
+### Credits : 
 Rami GB [Blog](http://ramigbtech.blogspot.com) | [Twitter](http://www.twitter.com/ramigb)
